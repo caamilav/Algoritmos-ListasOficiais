@@ -46,9 +46,10 @@ int main()
             cout << "Valor: R$ ";
             cin >> valores[posicao];
 
-            //to do:validar
-            cout << "Tipo do documento 1 - livro ou 2 - revista: ";
-            cin >> tipos[posicao];
+            do {
+                cout << "Tipo do documento 1 - livro ou 2 - revista: ";
+                cin >> tipos[posicao];
+            } while (tipos[posicao] != 1 && tipos[posicao] != 2);
 
             cout << "\nItem registrado com sucesso!" << endl;
 
